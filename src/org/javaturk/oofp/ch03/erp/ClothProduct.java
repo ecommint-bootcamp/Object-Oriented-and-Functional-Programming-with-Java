@@ -7,26 +7,17 @@ package org.javaturk.oofp.ch03.erp;
  * @author akin
  *
  */
-public class ClothProduct extends Product {
+public class ClothProduct extends Good {
 	protected String sex;
 	protected String size;
 
-	/**
-	 * @param sku
-	 * @param description
-	 * @param price
-	 * @param tax
-	 * @param location
-	 * @param sex
-	 * @param size
-	 */
 	public ClothProduct(String sku, String description, double price, double tax, Location location, String sex, String size) {
 		super(sku, description, price, tax, location);
 		this.sex = sex;
 		this.size = size;
 	}
 
-	/**
+	/*
 	 * @author akin
 	 * @see org.javaturk.oofp.ch04.erp.Product#purchase()
 	 */

@@ -3,7 +3,7 @@
  */
 package org.javaturk.oofp.ch03.erp;
 
-public class Location {
+public class Location{
 	private String depot = "FirstDepot Building.";
 	private String place = "Bla bla place.";
 
