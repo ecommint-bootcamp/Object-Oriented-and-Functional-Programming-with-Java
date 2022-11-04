@@ -10,13 +10,12 @@ public class Student implements AbstractStudent {
     private Date dob;
     private String major;
 
-
-    public Student( int no, String name,int year,Date dob, String major){
-         this.no=no;
-         this.name=name;
+    public Student(String name,int year,Date dob, String major){
+        this.name=name;
         this.year=year;
         this.dob=dob;
         this.major=major;
+        this.no= Math.abs(this.year+this.major.hashCode());
     }
 
 
@@ -52,13 +51,13 @@ public class Student implements AbstractStudent {
     }
     
     public String toString(){
-        String s="";
-        s+= "Student Info:\n " + 
-            "Student no:\n " + no +
-            "Student name:\n " + name +
-            "Year of entry:\n " + year +
-            "Date of birth:\n " + dob +
-            "Major:\n " + major ;
+        String s="\n";
+        s+= "Student Info:\n" +
+            "Student no: " + no + "\n" +
+            "Student name: " + name + "\n" +
+            "Year of entry: " + year + "\n" +
+            "Date of birth: " + dob + "\n" +
+            "Major: " + major + "\n" ;
         return s;
     }
 
@@ -73,5 +72,5 @@ public class Student implements AbstractStudent {
 
 
 
-    
+
 }

@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class VocationalStudent extends Student {
 
-    public VocationalStudent(int no, String name, int year, Date dob, String major) {
-        super(no, name, year, dob, major);
+    public VocationalStudent(String name, int year, Date dob, String major) {
+        super(name, year, dob, major);
     }
 
     public String toString() {

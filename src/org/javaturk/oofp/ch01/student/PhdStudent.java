@@ -5,8 +5,8 @@ import java.util.Date;
 public class PhdStudent extends GraduateStudent {
     private boolean qualifyingExamTaken;
 
-    public PhdStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis,boolean qualifyingExamTaken) {
-        super(no, name, year, dob, major, advisor, thesis);
+    public PhdStudent(String name, int year, Date dob, String major, String advisor, String thesis,boolean qualifyingExamTaken) {
+        super(name, year, dob, major, advisor, thesis);
         this.qualifyingExamTaken=qualifyingExamTaken;
     }
 
@@ -32,5 +32,16 @@ public class PhdStudent extends GraduateStudent {
 
     public void writePaper(){
         System.out.println("Phd Student is writing a paper...");
+    }
+
+    @Override
+    public String toString() {
+        String s="";
+        if(!qualifyingExamTaken){
+            s="Student has not taken the qualifying exam.";
+        }else{
+            s="Student has taken the qualifying exam.";
+        }
+        return super.toString() + "\n"+s;
     }
 }

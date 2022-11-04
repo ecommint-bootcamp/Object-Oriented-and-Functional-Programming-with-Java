@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class MasterStudent extends GraduateStudent{
 
-    public MasterStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis) {
-        super(no, name, year, dob, major, advisor, thesis);
+    public MasterStudent(String name, int year, Date dob, String major, String advisor, String thesis) {
+        super(name, year, dob, major, advisor, thesis);
     }
 
     @Override
