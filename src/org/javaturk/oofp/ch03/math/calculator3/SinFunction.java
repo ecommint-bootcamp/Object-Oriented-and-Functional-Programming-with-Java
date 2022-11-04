@@ -3,7 +3,7 @@ package org.javaturk.oofp.ch03.math.calculator3;
 
 public class SinFunction implements SingleArgMathFunction {
 	
-	private static String name = "Sin";
+	private final String name = "Sin";
 
 	public String getName() {
 		return name;

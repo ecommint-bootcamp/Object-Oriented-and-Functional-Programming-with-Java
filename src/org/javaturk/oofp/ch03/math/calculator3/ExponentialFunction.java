@@ -3,7 +3,7 @@ package org.javaturk.oofp.ch03.math.calculator3;
 
 public class ExponentialFunction implements DoubleArgMathFunction{
 	
-	private static String name = "Exp";
+	private final String name = "Exp";
 
 	@Override
 	public String getName() {
