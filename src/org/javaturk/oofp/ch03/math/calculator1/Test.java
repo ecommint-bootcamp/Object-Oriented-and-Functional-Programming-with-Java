@@ -8,9 +8,13 @@ public class Test {
 	public static void main(String[] args) {
 		in = new Scanner(System.in);
 		
-		CalculatorT1 calculator1 = new CalculatorT1(2);
+		CalculatorT1 calculator1 = new CalculatorT1(6);
 		calculator1.addFunction(new SinFunction());
 		calculator1.addFunction(new CosFunction());
+		calculator1.addFunction(new CubeFunction());
+		calculator1.addFunction(new SquareFunction());
+		calculator1.addFunction(new SquareRootFunction());
+		calculator1.addFunction(new FibonacciFunction());
 //		calculator1.listMathFunction();
 		
 //		System.out.println();

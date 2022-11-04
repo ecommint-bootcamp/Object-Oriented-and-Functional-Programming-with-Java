@@ -1,8 +1,8 @@
 package org.javaturk.oofp.ch03.math.calculator1;
 
-public class SquaredFunction implements MathFunction{
+public class SquareRootFunction implements MathFunction{
 	
-	private static String name = "Squared";
+	private static String name = "Square Root";
 
 	@Override
 	public String getName() {
