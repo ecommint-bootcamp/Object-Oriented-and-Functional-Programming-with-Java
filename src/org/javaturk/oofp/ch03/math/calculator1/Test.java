@@ -11,6 +11,8 @@ public class Test {
 		CalculatorT1 calculator1 = new CalculatorT1(2);
 		calculator1.addFunction(new SinFunction());
 		calculator1.addFunction(new CosFunction());
+		calculator1.addFunction(new CubeFunction());
+		calculator1.addFunction(new FibonacciFunction());
 //		calculator1.listMathFunction();
 		
 //		System.out.println();
