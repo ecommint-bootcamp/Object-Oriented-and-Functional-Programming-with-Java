@@ -8,7 +8,10 @@ public class LogFunction implements MathFunction {
 		return name;
 	}
 
-	public double calculate(double arg) {
+	public double calculate(double arg) throws FunctionArgumentValueException {
+		if(arg <= 0) {
+			throw new FunctionArgumentValueException();
+		}
 		return Math.log(arg);
 	}
 }

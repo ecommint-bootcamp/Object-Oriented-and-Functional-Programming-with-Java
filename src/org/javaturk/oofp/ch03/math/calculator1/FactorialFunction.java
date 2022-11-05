@@ -8,11 +8,14 @@ public class FactorialFunction implements MathFunction {
 	}
 
 	@Override
-	public double calculate(double arg) {
+	public double calculate(double arg) throws FunctionArgumentValueException {
 		return calculateFactorial(arg);
 	}
 
-	private int calculateFactorial(double arg){
+	private int calculateFactorial(double arg) throws FunctionArgumentValueException {
+		if(arg <= 0) {
+			throw new FunctionArgumentValueException();
+		}
 		int k = (int) arg;
 		int factorial = 1;
 		

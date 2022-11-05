@@ -10,7 +10,10 @@ public class SumOfFibonacciFunction implements MathFunction{
     }
 
     @Override
-    public double calculate(double arg) {
+    public double calculate(double arg) throws FunctionArgumentValueException {
+        if(arg <= 0) {
+            throw new FunctionArgumentValueException();
+        }
         return calculateSumOfFibonacci((int)arg);
     }
 

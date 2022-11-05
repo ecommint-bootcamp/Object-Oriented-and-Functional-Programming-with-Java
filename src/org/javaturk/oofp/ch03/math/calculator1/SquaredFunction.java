@@ -10,7 +10,10 @@ public class SquaredFunction implements MathFunction{
 	}
 
 	@Override
-	public double calculate(double arg1) {
+	public double calculate(double arg1) throws FunctionArgumentValueException {
+		if(arg1 <= 0) {
+			throw new FunctionArgumentValueException();
+		}
 		return Math.sqrt(arg1);
 	}
 }
