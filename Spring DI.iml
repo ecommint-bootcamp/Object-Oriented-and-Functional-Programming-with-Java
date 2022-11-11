@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch04/resources/anotherBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch04/resources/anotherBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch07/greeting/greeting17/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch03/beanFactory/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting15/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/scope/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/value/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/required/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/greeting/greeting08/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/scope/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/spel/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch07/configuration/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/spel/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch02/greeting08/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch04/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch07/greeting/greeting17/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/greeting/greeting08/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/qualifier/custom/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting13/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/qualifier/custom/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/value/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch08/greeting/greeting20/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting12/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/greeting/greeting09/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/factory/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/greeting/greeting09/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch07/configuration/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch08/lifecycle/callback/method/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting13/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch03/beanFactory/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/callback/method/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch02/greeting08/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch08/processor/beanPostProcessor/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/autowired/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/processor/beanPostProcessor/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/greeting/greeting10/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/autowired/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/factory/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/greeting/greeting10/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting12/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/greeting/greeting20/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/required/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting15/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch04/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/profile/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/applicationContext/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch01/greeting08/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch01/greeting08/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch08/lifecycle/applicationContext/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting14/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/qualifier/generics/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/qualifier/generics/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting11/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting14/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/lazy/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/conditional/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/conditional/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting11/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/lazy/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/profile/resources/beans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/lazy/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch08/lifecycle/applicationContext/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting11/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/lazy/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting14/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/qualifier/generics/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/greeting/greeting14/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/greeting/greeting11/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/applicationContext/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/profile/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch06/profile/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/qualifier/generics/resources/beans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/injection/collection/resources/collection.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/injection/collection/resources/collection.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/collection.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/collection.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/customValue.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/customValue.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/duplicatedIdBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/duplicatedIdBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/idBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/idBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch03/beanFactory/resources/idBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch03/beanFactory/resources/idBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch03/beanFactory/resources/importedBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch03/beanFactory/resources/importedBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/inheritanceBeans1.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/inheritanceBeans1.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/inheritanceBeans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/inheritanceBeans2.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch03/beanFactory/resources/nestedBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch03/beanFactory/resources/nestedBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/bean/resources/value.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch05/injection/value/resources/value.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/injection/value/resources/value.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch05/bean/resources/value.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch04/resources/yetAnotherBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch04/resources/yetAnotherBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch03/beanFactory/resources/zeroBeans.xml</file>
+          <file>file://$MODULE_DIR$/bin/org/javaturk/spring/di/ch03/beanFactory/resources/zeroBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/callback/example/conf/AnnotationConfigApplicationContextExampleAppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/processor/beanPostProcessor/conf/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/callback/prototype/conf/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/aware/conf/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/applicationContext/lifecycle/config/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch07/inject/conf/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/order/init/conf/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/callback/annotation/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lazy/conf/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/configuration/conf/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch06/qualifier/generics/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/order/conf/AppConfiguration.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/lifecycle/applicationContext/AppConfiguration2.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch07/configuration/conf/Configuration1.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch07/greeting/greeting17/conf/GreetingConfiguration3.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/ch08/processor/beanFactoryPostProcessor/conf/PostProcessorAppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/calculator1Spring/resources/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/org/javaturk/spring/di/calculator1Spring/resources/beans.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="weld" level="project" />
+  </component>
+</module>

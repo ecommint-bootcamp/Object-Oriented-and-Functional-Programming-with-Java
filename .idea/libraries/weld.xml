@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="weld">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.enterprise.cdi-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.interceptor-api-2.0.0-RC2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/weld-core-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/weld-se-shaded.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.interceptor-api-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.el-3.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jboss-logging-3.4.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/weld-spi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/weld-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/weld-se-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.el-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jsr330-api-0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/weld/jakarta.inject-api-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

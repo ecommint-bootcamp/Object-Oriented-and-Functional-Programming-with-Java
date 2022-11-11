@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans	
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="calculator"
+		class="org.javaturk.spring.di.calculator1Spring.CalculatorT1">
+		<property name="functions">
+			<list>
+				<ref bean="cosfunction"/>
+				<ref bean="cubefunction"/>
+				<ref bean="sinfunction"/>
+				<ref bean="squarefunction"/>
+			</list>
+		</property>
+		<constructor-arg value="4" />
+	</bean>
+
+	<bean id="cosfunction"
+		  class="org.javaturk.spring.di.calculator1Spring.CosFunction" />
+	<bean id="cubefunction"
+		  class="org.javaturk.spring.di.calculator1Spring.CubeFunction" />
+	<bean id="fibonaccifunction"
+		  class="org.javaturk.spring.di.calculator1Spring.FibonacciFunction" />
+	<bean id="logfunction"
+		  class="org.javaturk.spring.di.calculator1Spring.LogFunction" />
+	<bean id="sinfunction"
+		  class="org.javaturk.spring.di.calculator1Spring.SinFunction" />
+	<bean id="squarefunction"
+		  class="org.javaturk.spring.di.calculator1Spring.SquareFunction" />
+	<bean id="squarerootfunction"
+		  class="org.javaturk.spring.di.calculator1Spring.SquareRootFunction" />
+</beans>
