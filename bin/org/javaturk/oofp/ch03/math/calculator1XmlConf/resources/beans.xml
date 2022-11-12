@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "calculator" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.CalculatorT1">
+        <property name="functions">
+            <list>
+                <ref bean="sinfunction"/>
+                <ref bean="logfunction"/>
+                <ref bean="cosfunction"/>
+                <ref bean="squaredfunction"/>
+                <ref bean="factorialfunction"/>
+            </list>
+        </property>
+        <constructor-arg value="4" />
+    </bean>
+
+    <bean id = "sinfunction" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.SinFunction">
+    </bean>
+
+    <bean id = "logfunction" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.LogFunction">
+    </bean>
+
+    <bean id = "cosfunction" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.CosFunction">
+    </bean>
+
+    <bean id = "squaredfunction" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.SquaredFunction">
+    </bean>
+
+    <bean id = "factorialfunction" class="org.javaturk.oofp.ch03.math.calculator1XmlConf.FactorialFunction">
+    </bean>
+</beans>

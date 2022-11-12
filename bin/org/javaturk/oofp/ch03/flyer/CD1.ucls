@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.SeaPlane" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/SeaPlane.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="763" y="676"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.Boat" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/Boat.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="394" y="491"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.Floatable" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/Floatable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="396" y="217"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.Vehicle" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/Vehicle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="572" y="83"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="5" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.Airplane" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/Airplane.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="762" y="391"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.AbstractVehicle" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/AbstractVehicle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="572" y="245"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="org.javaturk.oofp.ch04.flyer.vehicle.Flyer" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/vehicle/Flyer.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="767" y="131"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="org.javaturk.oofp.ch04.flyer.animal.Animal" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/animal/Animal.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="972" y="67"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="org.javaturk.oofp.ch04.flyer.animal.Bird" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/animal/Bird.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="971" y="271"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="10" language="java" name="org.javaturk.oofp.ch04.flyer.animal.Hunter" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/animal/Hunter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1163" y="251"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="11" language="java" name="org.javaturk.oofp.ch04.flyer.animal.Eagle" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/animal/Eagle.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="972" y="486"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="org.javaturk.oofp.ch04.flyer.driver.Pilot" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/Pilot.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="78" y="423"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="org.javaturk.oofp.ch04.flyer.driver.AbstractDriver" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/AbstractDriver.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="156" y="250"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="org.javaturk.oofp.ch04.flyer.driver.Harbour" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/Harbour.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1172" y="469"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="org.javaturk.oofp.ch04.flyer.driver.PetLover" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/PetLover.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1173" y="769"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="16" language="java" name="org.javaturk.oofp.ch04.flyer.driver.Driver" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/Driver.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="156" y="86"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="17" language="java" name="org.javaturk.oofp.ch04.flyer.driver.UniversalDriver" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/UniversalDriver.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="244" y="424"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="org.javaturk.oofp.ch04.flyer.driver.Hangar" 
+    project="Java ile Nesne Merkezli ve Fonksiyonel Programlama" 
+    file="/Java ile Nesne Merkezli ve Fonksiyonel Programlama/src/org/javaturk/oofp/ch04/flyer/driver/Hangar.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1175" y="637"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <realization id="20">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <generalization id="21">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <realization id="22">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <realization id="23">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <realization id="25">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <realization id="30">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="false" protected="true" private="true" static="true"/>    
+    <operations public="true" package="false" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
