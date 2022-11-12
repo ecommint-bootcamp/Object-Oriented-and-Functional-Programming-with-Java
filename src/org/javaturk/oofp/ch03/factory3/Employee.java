@@ -77,7 +77,8 @@ public class Employee implements Worker, Comparable{
 
 	@Override
 	public int compareTo(Object o) {
-		if(o instanceof Employee e) {
+		if(o instanceof Employee) {
+			Employee e = (Employee) o;
 			if(no < e.no)
 				return -1;
 			else if(no == e.no)

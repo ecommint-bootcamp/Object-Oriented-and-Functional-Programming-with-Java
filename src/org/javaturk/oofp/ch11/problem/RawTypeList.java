@@ -23,9 +23,11 @@ public class RawTypeList {
 
 		for (Object e : employees) {
 //			Employee e1 = (Employee) e;
-			if (e instanceof Employee emp)
+			if (e instanceof Employee ) {
+				org.javaturk.oofp.ch03.factory3.Employee emp = (org.javaturk.oofp.ch03.factory3.Employee) e;
 				System.out.println(emp);
 //				System.out.println(((Employee) e).getFirstName());
+			}
 		}
 
 		Object o = employees.get(0);

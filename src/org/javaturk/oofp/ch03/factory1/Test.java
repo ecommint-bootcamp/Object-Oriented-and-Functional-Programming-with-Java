@@ -17,7 +17,8 @@ public class Test {
 			System.out.println("Salary: " + e.calculateSalary());
 		}
 		
-		if(w instanceof Employee e) {
+		if(w instanceof Employee ) {
+			Employee e = (Employee)w;
 			System.out.println("Salary: " + e.calculateSalary());
 		}
 
