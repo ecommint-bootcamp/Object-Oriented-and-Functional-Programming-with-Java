@@ -7,8 +7,6 @@ package org.javaturk.oofp.ch03.erp;
 public abstract class Product {
 	protected String sku;
 	protected String description;
-	protected double price;
-	protected double tax;
 	protected Location location;
 	
 	/**
@@ -18,11 +16,9 @@ public abstract class Product {
 	 * @param tax
 	 * @param location
 	 */
-	public Product(String sku, String description, double price, double tax, Location location) {
+	public Product(String sku, String description, Location location) {
 		this.sku = sku;
 		this.description = description;
-		this.price = price;
-		this.tax = tax;
 		this.location = location;
 	}
 
@@ -55,34 +51,6 @@ public abstract class Product {
 	}
 
 	/**
-	 * @return the price
-	 */
-	public double getPrice() {
-		return price;
-	}
-
-	/**
-	 * @param price the price to set
-	 */
-	public void setPrice(double price) {
-		this.price = price;
-	}
-
-	/**
-	 * @return the tax
-	 */
-	public double getTax() {
-		return tax;
-	}
-
-	/**
-	 * @param tax the tax to set
-	 */
-	public void setTax(double tax) {
-		this.tax = tax;
-	}
-
-	/**
 	 * @return the location
 	 */
 	public Location getLocation() {
@@ -95,6 +63,4 @@ public abstract class Product {
 	public void setLocation(Location location) {
 		this.location = location;
 	}
-	
-	public abstract void purchase();
 }

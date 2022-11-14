@@ -7,7 +7,7 @@ package org.javaturk.oofp.ch03.erp;
  * @author akin
  *
  */
-public class ClothProduct extends Product {
+public class ClothProduct extends PricedProduct {
 	protected String sex;
 	protected String size;
 
@@ -21,7 +21,7 @@ public class ClothProduct extends Product {
 	 * @param size
 	 */
 	public ClothProduct(String sku, String description, double price, double tax, Location location, String sex, String size) {
-		super(sku, description, price, tax, location);
+		super(sku, description, location, price, tax);
 		this.sex = sex;
 		this.size = size;
 	}

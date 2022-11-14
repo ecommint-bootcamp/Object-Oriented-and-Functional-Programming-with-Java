@@ -5,7 +5,7 @@ package org.javaturk.oofp.ch03.erp;
 
 import java.util.Date;
 
-public class FoodProduct extends Product {
+public class FoodProduct extends PricedProduct {
 	protected Date productionDate;
 	protected int life;
 
@@ -19,7 +19,7 @@ public class FoodProduct extends Product {
 	 * @param life
 	 */
 	public FoodProduct(String sku, String description, double price, double tax, Location location, Date productionDate, int life) {
-		super(sku, description, price, tax, location);
+		super(sku, description, location, price, tax);
 		this.productionDate = productionDate;
 		this.life = life;
 	}
