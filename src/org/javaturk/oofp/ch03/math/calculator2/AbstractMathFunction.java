@@ -1,5 +1,5 @@
 
-package org.javaturk.oofp.ch03.math.calculator2;
+package javaturk.oofp.ch03.math.calculator2;
 
 public abstract class AbstractMathFunction implements MathFunction {
 

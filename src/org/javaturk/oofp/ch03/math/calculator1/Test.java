@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch03.math.calculator1;
+package javaturk.oofp.ch03.math.calculator1;
 
 import java.util.Scanner;
 
@@ -8,9 +8,12 @@ public class Test {
 	public static void main(String[] args) {
 		in = new Scanner(System.in);
 		
-		CalculatorT1 calculator1 = new CalculatorT1(2);
+		CalculatorT1 calculator1 = new CalculatorT1(5);
 		calculator1.addFunction(new SinFunction());
 		calculator1.addFunction(new CosFunction());
+		calculator1.addFunction(new NumberOfSquare());
+		calculator1.addFunction(new NumberOfCube());
+		calculator1.addFunction(new SumOfFibonacciNumber());
 //		calculator1.listMathFunction();
 		
 //		System.out.println();

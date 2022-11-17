@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch03.math.calculator2;
+package javaturk.oofp.ch03.math.calculator2;
 
 
 public class SinFunction extends AbstractMathFunction  {
