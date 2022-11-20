@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch02.perisistence.domain;
+package javaturk.oofp.ch02.perisistence.domain;
 
 public class Employee extends Entity{
 	protected String name;

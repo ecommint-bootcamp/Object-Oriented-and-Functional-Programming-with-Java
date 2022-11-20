@@ -1,5 +1,5 @@
 
-package org.javaturk.oofp.ch02.perisistence.domain;
+package javaturk.oofp.ch02.perisistence.domain;
 
 public class Product extends Entity {
 	protected String sku;

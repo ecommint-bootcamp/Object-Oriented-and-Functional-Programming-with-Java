@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch03.math.calculator3;
+package javaturk.oofp.ch03.math.calculator3;
 
 
 public class SinFunction implements SingleArgMathFunction {

@@ -1,8 +1,8 @@
 
-package org.javaturk.oofp.ch02.perisistence.dao;
+package javaturk.oofp.ch02.perisistence.dao;
 
-import org.javaturk.oofp.ch02.perisistence.domain.Entity;
-import org.javaturk.oofp.ch02.perisistence.domain.Product;
+import javaturk.oofp.ch02.perisistence.domain.Entity;
+import javaturk.oofp.ch02.perisistence.domain.Product;
 
 public class ProductDao extends AbstractDao {
 	

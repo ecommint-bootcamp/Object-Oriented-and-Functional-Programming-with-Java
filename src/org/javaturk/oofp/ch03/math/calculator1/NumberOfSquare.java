@@ -9,8 +9,13 @@ public class NumberOfSquare implements MathFunction {
     }
 
     @Override
-    public double calculate(double arg) {
-        return (double) numberOfSquare((int) arg);
+    public double calculate(double arg) throws ExceptionHandling {
+        try {
+            return (double) numberOfSquare((int) arg);
+        }
+        catch (Exception e){
+            throw new ExceptionHandling("Wrong data type. Check your input.");
+        }
     }
 
     private int numberOfSquare(int arg) {

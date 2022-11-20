@@ -1,9 +1,9 @@
 
-package org.javaturk.oofp.ch02.perisistence.test;
+package javaturk.oofp.ch02.perisistence.test;
 
-import org.javaturk.oofp.ch02.perisistence.dao.EmployeeDao;
-import org.javaturk.oofp.ch02.perisistence.domain.Employee;
-import org.javaturk.oofp.ch02.perisistence.service.EmployeeService;
+import javaturk.oofp.ch02.perisistence.dao.EmployeeDao;
+import javaturk.oofp.ch02.perisistence.domain.Employee;
+import javaturk.oofp.ch02.perisistence.service.EmployeeService;
 
 public class Test {
 

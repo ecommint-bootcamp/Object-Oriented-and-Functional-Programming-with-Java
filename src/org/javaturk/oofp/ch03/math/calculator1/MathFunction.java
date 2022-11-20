@@ -4,6 +4,6 @@ public interface MathFunction {
 
 	public String getName();
 	
-	public double calculate(double arg);	
+	public double calculate(double arg) throws ExceptionHandling;
 	
 }

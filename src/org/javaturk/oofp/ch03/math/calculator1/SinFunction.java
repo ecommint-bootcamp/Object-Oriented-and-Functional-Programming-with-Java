@@ -9,7 +9,12 @@ public class SinFunction implements MathFunction {
 	}
 	
 	@Override
-	public double calculate(double arg) {
-		return Math.sin(arg);
+	public double calculate(double arg) throws ExceptionHandling {
+		try {
+			return Math.sin(arg);
+		}
+		catch (Exception e){
+			throw new ExceptionHandling("Wrong data type. Check your input.");
+		}
 	}
 }

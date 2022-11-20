@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.javaturk.oofp.ch03.erp;
+package javaturk.oofp.ch03.erp;
 
 /**
  * @author akin
@@ -28,7 +28,7 @@ public class ClothProduct extends Product {
 
 	/**
 	 * @author akin
-	 * @see org.javaturk.oofp.ch04.erp.Product#purchase()
+	 * @see javaturk.oofp.ch04.erp.Product#purchase()
 	 */
 	@Override
 	public void purchase() {

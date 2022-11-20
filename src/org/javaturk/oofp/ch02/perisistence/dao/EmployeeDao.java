@@ -1,8 +1,8 @@
 
-package org.javaturk.oofp.ch02.perisistence.dao;
+package javaturk.oofp.ch02.perisistence.dao;
 
-import org.javaturk.oofp.ch02.perisistence.domain.Employee;
-import org.javaturk.oofp.ch02.perisistence.domain.Entity;
+import javaturk.oofp.ch02.perisistence.domain.Employee;
+import javaturk.oofp.ch02.perisistence.domain.Entity;
 
 public class EmployeeDao extends AbstractDao {
 

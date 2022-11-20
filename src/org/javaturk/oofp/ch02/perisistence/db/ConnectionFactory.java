@@ -1,5 +1,5 @@
 
-package org.javaturk.oofp.ch02.perisistence.db;
+package javaturk.oofp.ch02.perisistence.db;
 
 public class ConnectionFactory {
 

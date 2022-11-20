@@ -1,9 +1,9 @@
 
-package org.javaturk.oofp.ch02.perisistence.dao;
+package javaturk.oofp.ch02.perisistence.dao;
 
-import org.javaturk.oofp.ch02.perisistence.db.ConnectionFactory;
-import org.javaturk.oofp.ch02.perisistence.db.DBConnection;
-import org.javaturk.oofp.ch02.perisistence.domain.Entity;
+import javaturk.oofp.ch02.perisistence.db.ConnectionFactory;
+import javaturk.oofp.ch02.perisistence.db.DBConnection;
+import javaturk.oofp.ch02.perisistence.domain.Entity;
 
 public abstract class AbstractDao {
 	protected DBConnection db;

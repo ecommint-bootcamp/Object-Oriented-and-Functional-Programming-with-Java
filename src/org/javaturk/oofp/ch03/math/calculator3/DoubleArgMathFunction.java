@@ -1,5 +1,5 @@
 
-package org.javaturk.oofp.ch03.math.calculator3;
+package javaturk.oofp.ch03.math.calculator3;
 
 public interface DoubleArgMathFunction extends MathFunction {
 	

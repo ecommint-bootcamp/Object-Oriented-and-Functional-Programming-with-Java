@@ -1,8 +1,8 @@
 
-package org.javaturk.oofp.ch02.perisistence.db;
+package javaturk.oofp.ch02.perisistence.db;
 
-import org.javaturk.oofp.ch02.perisistence.dao.*;
-import org.javaturk.oofp.ch02.perisistence.domain.*;
+import javaturk.oofp.ch02.perisistence.dao.*;
+import javaturk.oofp.ch02.perisistence.domain.*;
 
 public class DBConnection {
 	
