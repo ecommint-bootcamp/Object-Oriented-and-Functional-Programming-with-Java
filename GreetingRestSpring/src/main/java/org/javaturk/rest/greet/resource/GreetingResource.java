@@ -13,9 +13,11 @@ import org.javaturk.rest.greet.repo.GreetingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -121,5 +123,32 @@ public class GreetingResource {
 			return ResponseEntity.created(location).build();
 		} else
 			return ResponseEntity.status(409).build();
+	}
+	
+	@PutMapping("{language}/{greeting}")
+	public ResponseEntity<Object> replaceGreetingByParameter(@PathVariable("language") String language, @PathVariable("greeting") String greeting) {
+		Greeting greetingObject = new Greeting(language, greeting);
+		if (repo.contains(language)) {
+			if (repo.contains(greetingObject)) {
+				return ResponseEntity.status(409).body("Exact resource already exists!");
+			} else {
+				if (repo.replaceGreeting(greetingObject)) {
+					return ResponseEntity.ok().build();
+				} else
+					return ResponseEntity.status(409).body("A problem occurred during replacement!");
+			}
+		} else { // Just add it as a new resource!
+			repo.addGreeting(greetingObject);
+			URI location=ServletUriComponentsBuilder.fromCurrentRequest().path("").buildAndExpand().toUri();
+			return ResponseEntity.created(location).build();
+		}
+	}
+	
+	@DeleteMapping("{language}")
+	public ResponseEntity<Object> deleteGreeting(@PathVariable("language") String language) {
+		if (repo.deleteGreeting(language))
+			return ResponseEntity.status(200).body("Resource with language " + language + " has been deleted.");
+		else
+			return ResponseEntity.status(409).body("No such language found: " + language);
 	}
 }
