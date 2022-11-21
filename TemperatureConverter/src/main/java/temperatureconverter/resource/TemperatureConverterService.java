@@ -12,6 +12,6 @@ public interface TemperatureConverterService {
 
 	List<Temperature> getAllTemperatures();
 
-	Conversion convert(temperatureconverter.domain.Temperature sourceTemperature, Temperature targetTemperature, double amount);
+	Conversion convert(Temperature sourceTemperature, Temperature targetTemperature, double amount);
 
 }
