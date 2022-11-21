@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="calculatorT1" class="org.yabdioglu.springCalculator.xml.CalculatorT1">
+		<constructor-arg name="functionCount" value="2" />
+		<property name="functions">
+			<list>
+				<ref bean="cosFunc" />
+				<ref bean="sinFunc" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="sinFunc" class="org.yabdioglu.springCalculator.xml.SinFunction">
+	</bean>
+
+	<bean id="cosFunc" class="org.yabdioglu.springCalculator.xml.CosFunction">
+	</bean>
+
+	<bean id="logFunc" class="org.yabdioglu.springCalculator.xml.LogFunction">
+	</bean>
+</beans>
