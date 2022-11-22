@@ -36,7 +36,12 @@ public class Test {
 			System.exit(0);
 		System.out.println("Please enter the argument of the function:");
 		double functionArg = in.nextDouble(); 
-		double result = calculator.doCalculation(functionName, functionArg);
+		double result = 0;
+		try {
+			result = calculator.doCalculation(functionName, functionArg);
+		} catch (InvalidFunctionException e) {
+			e.printStackTrace();
+		}
 		System.out.println(functionName + " of " + functionArg + " is " + result + "\n");
 		
 		startCalculator(calculator);

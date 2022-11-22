@@ -24,7 +24,7 @@ public class CalculatorT1 implements Calculator{
 //	}
 
 	@Override
-	public double doCalculation(String functionName, double arg) {
+	public double doCalculation(String functionName, double arg) throws InvalidFunctionException{
 		double result = 0.0;
 		boolean isFunctionFound = false;
 		for (MathFunction function : functions) {
@@ -34,7 +34,7 @@ public class CalculatorT1 implements Calculator{
 			}
 		}
 		if(!isFunctionFound)
-			System.out.println("No such function found!");
+			throw new InvalidFunctionException("No such function found!" + functionName);
 
 		return result;
 	}

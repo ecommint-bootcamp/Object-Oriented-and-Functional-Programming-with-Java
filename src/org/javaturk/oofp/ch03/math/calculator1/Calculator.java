@@ -6,6 +6,6 @@ public interface Calculator {
 	
 	public void listMathFunction();
 	
-	public double doCalculation(String functionName, double arg);
+	public double doCalculation(String functionName, double arg) throws InvalidFunctionException;
 
 }
