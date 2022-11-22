@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch03.math.calculator1;
+package javaturk.oofp.ch03.math.calculator1;
 
 import java.util.Scanner;
 

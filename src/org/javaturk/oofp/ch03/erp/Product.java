@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.javaturk.oofp.ch03.erp;
+package javaturk.oofp.ch03.erp;
 
 
 public abstract class Product {

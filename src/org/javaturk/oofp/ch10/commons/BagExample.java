@@ -1,4 +1,4 @@
-package org.javaturk.oofp.ch10.commons;
+package javaturk.oofp.ch10.commons;
 
 import java.util.Iterator;
 
