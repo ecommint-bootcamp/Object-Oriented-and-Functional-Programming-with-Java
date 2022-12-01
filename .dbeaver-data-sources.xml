@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="derby_server-16674213035-20a281f7a7a5bca9" provider="generic" driver="derby_server" name="Derby - JPA" save-password="true" show-system-objects="true" show-util-objects="true" read-only="false">
+		<connection host="localhost" port="1527" server="" database="JPA" url="jdbc:derby://localhost:1527/JPA;create=false" user="admin" password="AwUVM1ZMVhJl8w==" type="dev"/>
+	</data-source>
+	<filters/>
+</data-sources>

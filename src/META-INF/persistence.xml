@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="ch01"
+		transaction-type="RESOURCE_LOCAL">
+
+		<mapping-file>META-INF/ch01_orm.xml</mapping-file>
+
+		<class>org.javaturk.jpa.ch01.domain.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+		<!-- <properties> -->
+		<!-- <property name="eclipselink.logging.level.sql" value="OFF" /> -->
+		<!-- <property name="eclipselink.ddl-generation" -->
+		<!-- value="create-tables" /> -->
+		<!-- <property name="eclipselink.ddl-generation.output-mode" -->
+		<!-- value="database" /> -->
+		<!-- </properties> -->
+	</persistence-unit>
+
+	<persistence-unit name="entity"
+		transaction-type="RESOURCE_LOCAL">
+
+		<!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+		<!-- <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+
+		<class>org.javaturk.jpa.ch02.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+		<properties>
+
+			<!-- DerbyDB -->
+			<!-- <property name="javax.persistence.jdbc.driver" -->
+			<!-- value="org.apache.derby.jdbc.ClientDriver" /> -->
+			<!-- <property name="javax.persistence.jdbc.url" -->
+			<!-- value="jdbc:derby://localhost:1527/JPA;create=true" /> -->
+			<!-- <property name="javax.persistence.jdbc.user" value="app" /> -->
+			<!-- <property name="javax.persistence.jdbc.password" -->
+			<!-- value="password" /> -->
+
+			<!-- MySQL -->
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.cj.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost/JPA" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password"
+				value="password" />
+
+<!-- 			<property name="javax.persistence.schema-generation.database.action" value="create" /> -->
+			<!-- none, create, drop-and-create, drop’ -->
+
+			<!-- LOGGING -->
+			<!-- <property name="eclipselink.logging.level" value="FINE" /> -->
+			<!-- <property name="eclipselink.logging.level.sql" value="FINE" /> -->
+			<!-- <property name="eclipselink.logging.parameters" value="true" /> -->
+
+			<!-- https://wiki.eclipse.org/EclipseLink/Examples/JPA/Logging -->
+
+		</properties>
+	</persistence-unit>
+
+	<!-- Access Types -->
+	<persistence-unit name="propertyAccess"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.access.propertyAccess.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="mixedAccess"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.access.mixedAccess.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="table"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.table.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personTransient"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.trans.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- For Id Strategies -->
+
+	<persistence-unit name="personIdentityAssigned"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.assigned.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+	<persistence-unit name="auto"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.auto.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="sequence"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.sequence.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="identity"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.identity.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="tableGenerator"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.table.Person</class>
+		<class>org.javaturk.jpa.ch04.id.table.Student</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="composite1"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.composite1.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="composite2"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.id.composite2.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="composite3"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.id.composite3.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+
+	<!-- Multiple Tables -->
+
+	<persistence-unit name="twoTables"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.multipleTables.twoTables.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="manyTables"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.multipleTables.manyTables.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+		</properties>
+	</persistence-unit>
+
+	<!-- Multiple Tables -->
+
+	<persistence-unit name="serializable"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.mappings.serializable.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personEmbedded"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.embedded.Person</class>
+		<class>org.javaturk.jpa.ch04.embedded.Student</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+	<!-- Mappings -->
+
+	<persistence-unit name="types"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.mappings.types.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="temporal"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.mappings.temporal.Employee</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="enumeration"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch04.mappings.enumeration.Employee</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="lob"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.mappings.lob.Book</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="fetch"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch04.fetch.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+<!-- 			<property name="eclipselink.weaving" value="true" /> -->
+<!-- 			<property name="eclipselink.logging.level" value="FINE" /> -->
+<!-- 			<property name="eclipselink.logging.level.sql" value="FINE" /> -->
+<!-- 			<property name="eclipselink.logging.parameters" value="true" /> -->
+		</properties>
+	</persistence-unit>
+
+	<!-- Basic Type Collection Mappings -->
+
+	<persistence-unit name="collection.basicTypesSet"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.collection.basicTypes.set.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="collection.basicTypesList"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.collection.basicTypes.list.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="collection.basicTypesMap"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.collection.basicTypes.map.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="collection.embedded"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.collection.embedded.Person</class>
+		<class>org.javaturk.jpa.ch05.collection.embedded.Student</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- Assicoation Mappings -->
+
+	<persistence-unit name="personOneToOneUni"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.one2one.unidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2one.unidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+<!-- 			<property name="eclipselink.weaving" value="true" /> -->
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personOneToOneBi"
+		transaction-type="RESOURCE_LOCAL">
+
+<!-- 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+
+		<class>org.javaturk.jpa.ch05.one2one.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2one.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<!-- This only works in managed JPA environments for Hibernate JPA. -->
+			<!-- <property 
+				name="hibernate.enhancer.enableLazyInitialization" value="true"/> -->
+			<!-- <property name="eclipselink.weaving.lazy" value="true"/> -->
+
+			<!-- <property name="eclipselink.weaving" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.lazy" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.eager" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.fetchgroups" -->
+			<!-- value="true" /> -->
+			<!-- <property name="eclipselink.weaving.internal" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.changetracking" -->
+			<!-- value="true" /> -->
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personOneToManyBiList"
+		transaction-type="RESOURCE_LOCAL">
+
+<!-- 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+		<!-- <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+
+		<class>org.javaturk.jpa.ch05.one2many.list.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2many.list.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+		<properties>
+			<!-- <property name="eclipselink.logging.level" value="FINE" /> -->
+			<!-- <property name="eclipselink.logging.level.sql" value="FINE" /> -->
+			<!-- <property name="eclipselink.logging.parameters" value="true" /> -->
+			<!-- <property name="eclipselink.logging.parameters" value="true" /> -->
+
+			<!-- <property name="eclipselink.weaving.lazy" value="true" /> -->
+
+			<!-- <property name="eclipselink.weaving" value="false" /> -->
+			<!-- <property name="eclipselink.weaving.lazy" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.eager" value="true" /> -->
+			<!-- <property name="eclipselink.weaving.fetchgroups" -->
+			<!-- value="false" /> -->
+			<!-- <property name="eclipselink.weaving.internal" value="false" /> -->
+			<!-- <property name="eclipselink.weaving.changetracking" -->
+			<!-- value="false" /> -->
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personOneToManySetBi"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.one2many.set.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2many.set.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="eclipselink.logging.level" value="FINE" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+			<property name="eclipselink.weaving" value="false" />
+			<property name="eclipselink.weaving.lazy" value="false" />
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personOneToManyMapBi"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.one2many.map.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2many.map.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personManyToManyListBi"
+		transaction-type="RESOURCE_LOCAL">
+		
+<!-- 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+
+		<class>org.javaturk.jpa.ch05.many2many.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.many2many.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+<!-- 			<property name="eclipselink.weaving.eager" value="true" /> -->
+		</properties>
+	</persistence-unit>
+
+
+	<!-- *** Persistence unit for single table inheritance.*** -->
+	<persistence-unit name="personInheritanceSingleTable"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.singleTable.Person</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Employee</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Consultant</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Manager</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- *** Persistence unit for single table inheritance using joined strategy.*** -->
+	<persistence-unit name="personInheritanceJoined"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.joined.Person</class>
+		<class>org.javaturk.jpa.ch06.joined.Employee</class>
+		<class>org.javaturk.jpa.ch06.joined.Consultant</class>
+		<class>org.javaturk.jpa.ch06.joined.Manager</class>
+		<class>org.javaturk.jpa.ch06.joined.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- *** Persistence units for Inheritance.*** -->
+
+	<persistence-unit
+		name="personInheritanceTablePerClass"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.tablePerClass.Person</class>
+		<class>org.javaturk.jpa.ch06.tablePerClass.Employee</class>
+		<class>org.javaturk.jpa.ch06.tablePerClass.Consultant</class>
+		<class>org.javaturk.jpa.ch06.tablePerClass.Manager</class>
+		<class>org.javaturk.jpa.ch06.tablePerClass.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- *** Persistence unit for single table inheritance using an abstract 
+		root.*** -->
+	<persistence-unit name="personInheritanceASingleTable"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.singleTable.Person</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Employee</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Consultant</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Manager</class>
+		<class>org.javaturk.jpa.ch06.singleTable.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- *** Persistence unit for inheritance with mappes superclass.*** -->
+	<persistence-unit
+		name="personInheritanceMappedSuperclass"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.mappedSuperclass.Person</class>
+		<class>org.javaturk.jpa.ch06.mappedSuperclass.Employee</class>
+		<class>org.javaturk.jpa.ch06.mappedSuperclass.Consultant</class>
+		<class>org.javaturk.jpa.ch06.mappedSuperclass.Manager</class>
+		<class>org.javaturk.jpa.ch06.mappedSuperclass.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="personAbstractSingleTable"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch06.abstractSingleTable.Person</class>
+		<class>org.javaturk.jpa.ch06.abstractSingleTable.Employee</class>
+		<class>org.javaturk.jpa.ch06.abstractSingleTable.Consultant</class>
+		<class>org.javaturk.jpa.ch06.abstractSingleTable.Manager</class>
+		<class>org.javaturk.jpa.ch06.abstractSingleTable.Director</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+	<persistence-unit name="em"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch03.em.Person</class>
+		<class>org.javaturk.jpa.ch03.em.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="emf"
+		transaction-type="RESOURCE_LOCAL">
+
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+		<class>org.javaturk.jpa.ch03.emf.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.DerbyTenSevenDialect" />
+			<property name="javax.persistence.jdbc.driver"
+				value="org.apache.derby.jdbc.ClientDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby://localhost:1527/JPA;create=true" />
+			<property name="javax.persistence.jdbc.user" value="app" />
+			<property name="javax.persistence.jdbc.password"
+				value="password" />
+			<!-- <property name="javax.persistence.schema-generation.database.action" 
+				value="drop-and-create" /> -->
+			<!-- none, create, drop-and-create, drop’ -->
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="listener"
+		transaction-type="RESOURCE_LOCAL">
+		<!-- -->
+		<class>org.javaturk.jpa.ch03.listener.Person</class>
+		<class>org.javaturk.jpa.ch03.listener.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="lock"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch07.version.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+	<!-- *** Persistence unit for Transactions.*** -->
+	<persistence-unit name="personLocking"
+		transaction-type="RESOURCE_LOCAL">
+		<class>org.javaturk.jpa.ch07.concurrency.domain.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="tx"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch07.tx.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- Queries -->
+
+	<persistence-unit name="oqlSimple"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.oql.simple.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="leftJoin"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch05.one2many.list.bidirection.Person</class>
+		<class>org.javaturk.jpa.ch05.one2many.list.bidirection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="nativeSql"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.oql.simple.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="namedQuery"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.oql.simple.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="query"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.entity.factory.Person</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Car</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Employee</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Consultant</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Manager</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Director</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Project</class>
+		<class>org.javaturk.jpa.ch08.entity.factory.Task</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+
+	<persistence-unit name="graph"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.graph.Order</class>
+		<class>org.javaturk.jpa.ch08.graph.Product</class>
+		<class>org.javaturk.jpa.ch08.graph.OrderItem</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- <persistence-unit name="oqlJoin" transaction-type="RESOURCE_LOCAL"> -->
+
+	<!-- <class>org.javaturk.jpa.ch04.one2many.bidirection.Person</class> -->
+	<!-- <class>org.javaturk.jpa.ch04.one2many.bidirection.Car</class> -->
+	<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+	<!-- <properties> -->
+	<!-- </properties> -->
+	<!-- </persistence-unit> -->
+
+	<persistence-unit name="criteria"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch08.oql.simple.Person</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+	<!-- <persistence-unit name="validation" transaction-type="RESOURCE_LOCAL"> -->
+
+	<!-- <class>org.javaturk.jpa.ch12.simple.Person</class> -->
+	<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+	<!-- <validation-mode>Auto</validation-mode> -->
+	<!-- <properties> -->
+	<!-- </properties> -->
+	<!-- </persistence-unit> -->
+
+	<!-- Spring's JPA Support -->
+
+	<!-- <persistence-unit name="springPlain1" -->
+	<!-- transaction-type="RESOURCE_LOCAL"> -->
+
+	<!-- <class>org.javaturk.jpa.ch13.plain.di.Person</class> -->
+	<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+	<!-- <properties> -->
+	<!-- <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyDialect" 
+		/> -->
+	<!-- <property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.ClientDriver" 
+		/> -->
+	<!-- <property name="hibernate.connection.url" value="jdbc:derby://localhost:1527/JPA;create=true" 
+		/> -->
+	<!-- <property name="hibernate.connection.username" value="app" /> -->
+	<!-- <property name="hibernate.connection.password" value="password" /> -->
+	<!-- <property name="hibernate.hbm2ddl.auto" value="create" /> -->
+	<!-- <property name="hibernate.show_sql" value="false" /> -->
+
+	<!-- </properties> -->
+	<!-- </persistence-unit> -->
+
+	<!-- <persistence-unit name="springPlain2" -->
+	<!-- transaction-type="RESOURCE_LOCAL"> -->
+
+	<!-- <class>org.javaturk.jpa.ch13.plain.di.Person</class> -->
+	<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+	<!-- </persistence-unit> -->
+
+	<persistence-unit name="springPlainTxAnnotation"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch13.plain.tx.annotation.Person</class>
+		<class>org.javaturk.jpa.ch13.plain.tx.annotation.Car</class>
+		<class>org.javaturk.jpa.ch13.plain.tx.annotation.Log</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+	</persistence-unit>
+
+	<!-- <persistence-unit name="springPlainTxXml" -->
+	<!-- transaction-type="RESOURCE_LOCAL"> -->
+
+	<!-- <class>org.javaturk.jpa.ch13.plain.tx.xml.Person</class> -->
+	<!-- <class>org.javaturk.jpa.ch13.plain.tx.xml.Car</class> -->
+	<!-- <class>org.javaturk.jpa.ch13.plain.tx.xml.Log</class> -->
+	<!-- <exclude-unlisted-classes>true</exclude-unlisted-classes> -->
+	<!-- </persistence-unit> -->
+
+
+	<!-- Performance -->
+
+	<persistence-unit name="performance"
+		transaction-type="RESOURCE_LOCAL">
+
+		<class>org.javaturk.jpa.ch14.lazyCollection.Person</class>
+		<class>org.javaturk.jpa.ch14.lazyCollection.Car</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+		</properties>
+	</persistence-unit>
+
+</persistence>
+
+

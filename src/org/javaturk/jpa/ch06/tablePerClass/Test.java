@@ -1,0 +1,113 @@
+package org.javaturk.jpa.ch06.tablePerClass;
+
+import java.util.Collection;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
+
+import org.javaturk.jpa.util.PersistenceUtil;
+
+public class Test {
+	
+	public Test() {
+		PersistenceUtil.setPersistenceUnitName("personInheritanceTablePerClass");
+	}
+
+	public static void main(String[] args) {
+		Test test = new Test();
+
+		test.createPeople();
+//		test.retrieveAllPersons();
+//		test.retrieveAllConsultants();
+//		test.editConsultant();
+//		test.retrieveAPerson(4);
+		
+		PersistenceUtil.close();
+	}
+
+	void createPeople() {
+		System.out.println("---Creating people---");
+		EntityManager em = PersistenceUtil.getEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		
+		Person p = new Person();
+		p.setFirstName("Mihrimah");
+		p.setLastName("Kaldiroglu");
+
+		em.persist(p);
+
+		Employee e1 = new Employee("Ali", "Ozturk", "Production", 5);
+		e1.setId(1);
+		em.persist(e1);
+
+		Employee e2 = new Employee("Fatma", "Sonmez", "Production", 7);
+		e2.setId(2);
+		em.persist(e2);
+
+		Employee e3 = new Employee("Onder", "Ala", "Sales", 12);
+		e3.setId(3);
+		em.persist(e3);
+		
+		Consultant c1 = new Consultant("Akin", "Kaldiroglu", 1500);
+		c1.setId(4);
+		em.persist(c1);
+
+		Manager m1 = new Manager("Aysegul", "Peri", "Production", "Production", 7);
+		m1.setId(5);
+		em.persist(m1);
+
+		Manager m2 = new Manager("Mahmut", "Oncu", "Sales", "Sales", 17);
+		m2.setId(6);
+		em.persist(m2);
+
+		Director d = new Director("Selim", "Turk", "Management", "Management", 22);
+		d.setId(7);
+		em.persist(d);
+
+		tx.commit();
+		em.close();
+	}
+
+	private void retrieveAPerson(int i) {
+		EntityManager em = PersistenceUtil.getEntityManager();
+		Person person = em.find(Person.class, i);
+		System.out.println(person);
+	}
+	
+	public void retrieveAllPersons() {
+		System.out.println("\nAll of the persons: ");
+		EntityManager em = PersistenceUtil.getEntityManager();
+		Query allPersons = em.createQuery("Select p from Person p");
+		Collection<Person> persons = allPersons.getResultList();
+		System.out.println(persons.size() + " objects:");
+
+		for (Person person : persons)
+			System.out.println(person);
+		em.close();
+	}
+	
+	private void retrieveAllConsultants() {
+		System.out.println("\nAll of the consultants: ");
+		EntityManager em = PersistenceUtil.getEntityManager();
+		Query allConsultants = em.createQuery("Select c from Consultant c");
+		Collection<Consultant> consultants = allConsultants.getResultList();
+		System.out.println(consultants.size() + " objects:");
+
+		for (Consultant consultant : consultants)
+			System.out.println(consultant);
+		em.close();
+	}
+	
+	private void editConsultant() {
+		System.out.println("\nEditing a consultants: ");
+		EntityManager em = PersistenceUtil.getEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		Consultant consultant = em.find(Consultant.class, 5);
+		consultant.setNumberOfDays(8);
+		tx.commit();
+		em.close();
+	}
+}
