@@ -1,8 +1,5 @@
 package javaturk.oofp.ch03.math.calculator1;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.util.Scanner;
 
 public class Test {
@@ -10,10 +7,8 @@ public class Test {
 
 	public static void main(String[] args) throws ExceptionHandling {
 		in = new Scanner(System.in);
-
-		ApplicationContext context=new ClassPathXmlApplicationContext("javaturk/oofp/ch03/math/calculator1/resources/beans.xml");
-		CalculatorT1 calculator1=(CalculatorT1) context.getBean("beanC1");
-		//CalculatorT1 calculator1 = new CalculatorT1(5);
+		
+		CalculatorT1 calculator1 = new CalculatorT1(5);
 		calculator1.addFunction(new SinFunction());
 		calculator1.addFunction(new CosFunction());
 		calculator1.addFunction(new NumberOfSquare());
